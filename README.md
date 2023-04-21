@@ -1,6 +1,4 @@
-# Exercicio-Crud-PHP
-
-## Sistema de Cadastro de Solicitações 
+# Sistema de Cadastro de Solicitações 
 
 - Cadastro de Usuário.
 
