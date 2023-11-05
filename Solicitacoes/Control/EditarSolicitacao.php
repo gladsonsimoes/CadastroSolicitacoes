@@ -1,6 +1,6 @@
 <?php
-include("../protected.php");
-include('../conection/conn.php');
+include("../../protected.php");
+include('../../Conection/conn.php');
 
 if (isset($_GET['mensagem'])){
     $id = $_GET['mensagem'];

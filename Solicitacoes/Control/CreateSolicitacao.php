@@ -1,5 +1,5 @@
 <?php
-include('../../conection/conn.php');
+include('../../Conection/conn.php');
 
 $nome = $_POST['nome'];
 $textarea = $_POST['textarea'];

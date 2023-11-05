@@ -11,7 +11,7 @@
 <body>
     <h1>Cadastro </h1>
     <div>
-        <form action="controluser/createuser.php" method='POST'>
+        <form action="ControlUser/CreateUser.php" method='POST'>
             <div>
                 <label>Nome </label>
                 <input type="text" name="nome" required>

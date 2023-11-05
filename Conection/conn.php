@@ -3,7 +3,7 @@
 $user = 'root';
 $dbname = 'sistema';
 $pass = '';
-$port = '3308';
+$port = '3307';
 $host = 'localhost';
 
 try{

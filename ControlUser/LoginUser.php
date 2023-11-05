@@ -1,5 +1,5 @@
 <?php
-include('../conection/conn.php');
+include('../Conection/conn.php');
 
 session_start();
 
@@ -18,7 +18,7 @@ if ($row == 1) {
 
   setcookie('login', $login);
 
-  header("Location: ../solicitacoes/solicitacoes.php");
+  header("Location: ../Solicitacoes/solicitacoes.php");
 }
 
 
