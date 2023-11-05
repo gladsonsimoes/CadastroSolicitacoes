@@ -11,7 +11,7 @@
 <body>
     <h1>Cadastro </h1>
     <div>
-        <form action="ControlUser/CreateUser.php" method='POST'>
+        <form action="ControlUser/UserController.php" method='POST'>
             <div>
                 <label>Nome </label>
                 <input type="text" name="nome" required>
@@ -27,7 +27,7 @@
                 <input type="password" name="senha" required>
             </div>
             <br>
-            <button type="submit" >cadastrar usuario</button>
+            <button type="submit" name="createuser" >cadastrar usuario</button>
         </form>
     </div>
     <p>se tiver conta faca seu <a href="index.php">Login</a><p>
