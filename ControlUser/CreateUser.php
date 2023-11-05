@@ -1,5 +1,5 @@
 <?php
-require('../conection/conn.php');
+require('../Conection/conn.php');
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];

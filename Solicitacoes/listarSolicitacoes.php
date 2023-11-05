@@ -1,6 +1,6 @@
 <?php
 include("../protected.php");
-require("../conection/conn.php");
+require("../Conection/conn.php");
 
 $tabela = $conn->prepare("SELECT * FROM textarea;");
 $tabela->execute();
@@ -48,8 +48,8 @@ if (empty($rowTabela)) {
                     echo "<th scope='row'>" . $linha['id'] . "</th>";
                     echo "<td>" . $linha['nome'] . "</td>";
                     echo "<td>" . $linha['textarea'] . "</td>";
-                    echo '<td><a href=editarsolicitacao.php?mensagem=' . $linha['id'] . ' class="btn btn-warning">Editar</a></td>';
-                    echo '<td><a href=control/deletesolicitacao.php?mensagem=' . $linha['id'] . ' class="btn btn-danger">Excluir</a></td>';
+                    echo '<td><a href=Control/EditarSolicitacao.php?mensagem=' . $linha['id'] . ' class="btn btn-warning">Editar</a></td>';
+                    echo '<td><a href=Control/DeleteSolicitacao.php?mensagem=' . $linha['id'] . ' class="btn btn-danger">Excluir</a></td>';
                     echo '</tr>';
                 }
                 ?>

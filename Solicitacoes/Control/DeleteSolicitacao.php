@@ -1,5 +1,5 @@
 <?php
-require('../../conection/conn.php');
+require('../../Conection/conn.php');
 
    if( isset($_GET['mensagem'])){
         $id = $_GET['mensagem'];

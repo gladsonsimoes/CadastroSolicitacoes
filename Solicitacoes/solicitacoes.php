@@ -17,7 +17,7 @@ include("../protected.php");
 
 <body>
     <div class="container">
-        <form action="control/createsolicitacao.php" method="post">
+        <form action="Control/CreateSolicitacao.php" method="post">
             <h1>Criar uma solicitação</h1>
             <br>
             <br>
