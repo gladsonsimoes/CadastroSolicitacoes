@@ -1,6 +1,12 @@
+# Ativando modulo de reescrita
+
 RewriteEngine On
+
+# adicionando condições para redirecionamento 
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
+
+# a Rescrita da url para a index
 
 RewriteRule ^(.*)$ index.php?url=$1 [QSA]
