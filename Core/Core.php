@@ -39,7 +39,7 @@ class Core{
 
                 //instanciando objeto e a funcao action
                 $newController = new $currentController();
-                $newController->$action();
+                $newController->$action($matches);
             }
         }
 
