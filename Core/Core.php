@@ -9,6 +9,9 @@ class Core{
         //se o usuário não passar nada na url retornará vazio
         isset($_GET['url']) ? $url .= $_GET['url'] : '';
 
+        //resolver problema caso receba uma barra apos valor 
+        ($url != '/') ? $url = rtrim($url, '/') : $url;
+
         $routeFound = false;
 
         //pegando o array de rotas e passando como controller
