@@ -9,6 +9,8 @@ class Core{
         //se o usuário não passar nada na url retornará vazio
         isset($_GET['url']) ? $url .= $_GET['url'] : '';
 
+        $routeFound = false;
+
         //pegando o array de rotas e passando como controller
         foreach($routes as $path => $controller){
             //expressão regular para pegar somente valores alfanumerico (letras e numeros)
@@ -17,6 +19,8 @@ class Core{
             //condicao para pegar a expressao da url pattern e passar para a matches o que foi passado
             if(preg_match($pattern, $url, $matches))
             {
+                $routeFound = true;
+
                 // echo '<pre>';
                 // print_r($matches);
 
@@ -35,8 +39,16 @@ class Core{
 
                 //instanciando objeto e a funcao action
                 $newController = new $currentController();
-                $newController->$action($matches);
+                $newController->$action();
             }
+        }
+
+        //verificando se a routa existe ou n
+        if(!$routeFound)
+        {
+            require_once __DIR__."/../Controllers/NotFoundController.php";
+            $controller = new NotFoundController();
+            $controller->index();
         }
     }
 }
